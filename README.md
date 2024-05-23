@@ -13,7 +13,9 @@ CSS Styling: The website's styling is defined in the CSS files CSS/reset.css, CS
 Responsive Design: The website is designed to be responsive and includes a separate CSS file CSS/mobile.css for screens with a maximum width of 867px.
 
 ## Running the Website Locally
-To run this PHP project, you need to have a local server environment like XAMPP, WAMP, or MAMP. Here are the steps:
+To run this PHP project, you need to have a local server environment like XAMPP, WAMP, or MAMP. 
+
+Here are the steps:
 
 - Install a local server environment if you haven't already. XAMPP is a popular choice for windows and MAMP for mac.
 - Move your project folder into the htdocs directory of your local server environment. For XAMPP, this is usually located at C:\xampp\htdocs.
