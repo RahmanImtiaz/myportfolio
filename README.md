@@ -13,7 +13,7 @@ CSS Styling: The website's styling is defined in the CSS files CSS/reset.css, CS
 Responsive Design: The website is designed to be responsive and includes a separate CSS file CSS/mobile.css for screens with a maximum width of 867px.
 
 ## Running the Website Locally
-To run this PHP project, you need to have a local server environment like XAMPP, WAMP, or MAMP. 
+To run this PHP project, you need to have a local server environment like XAMPP or MAMP. 
 
 Here are the steps:
 
