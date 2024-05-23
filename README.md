@@ -15,11 +15,11 @@ Responsive Design: The website is designed to be responsive and includes a separ
 ## Running the Website Locally
 To run this PHP project, you need to have a local server environment like XAMPP, WAMP, or MAMP. Here are the steps:
 
-Install a local server environment if you haven't already. XAMPP is a popular choice for windows and MAMP for mac.
-Move your project folder into the htdocs directory of your local server environment. For XAMPP, this is usually located at C:\xampp\htdocs.
-Start your local server environment and make sure the Apache server is running.
-Open a web browser and navigate to http://localhost:8888/your_project_folder.
-Please replace your_project_folder with the name of your project folder.
+- Install a local server environment if you haven't already. XAMPP is a popular choice for windows and MAMP for mac.
+- Move your project folder into the htdocs directory of your local server environment. For XAMPP, this is usually located at C:\xampp\htdocs.
+- Start your local server environment and make sure the Apache server is running.
+- Open a web browser and navigate to http://localhost:8888/your_project_folder.
+- Please replace your_project_folder with the name of your project folder.
 
 ## Contributing
 As this is a personal portfolio website, contributions are not being accepted.
