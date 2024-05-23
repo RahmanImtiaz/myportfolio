@@ -1,0 +1,47 @@
+#cardPage-title h1 {
+    font-size: 3em;
+    padding-top: 6rem;
+    
+}
+
+header {
+    flex-direction: column;
+    padding: 0;
+    height: fit-content;
+}
+
+@media (max-width: 700px) {
+    header nav {
+        white-space: wrap;
+    }
+
+    .mainContentSection {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #Login-Form-box {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #cardPage-title h1 {
+        font-size: 2em;
+        padding-top: 8.5rem;
+    }
+}
+
+
+#aboutme {
+    flex-direction: column;
+}
+
+.Blog-Form-box {
+    width: 90vw;
+}
+
+.mainContentSection {
+    font-size: 0.8rem;
+}

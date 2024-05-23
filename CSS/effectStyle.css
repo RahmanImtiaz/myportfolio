@@ -1,0 +1,81 @@
+/* Animations/Effects */
+
+
+/* Skill effects */
+.tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform .6s ease, height .2s ease-in-out;
+    box-shadow: 0 0.5em 1em -0.25em rgba(195, 134, 64, 0.119);
+    background-color: #343434;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+
+/* horizontal scroller */
+.scroller {
+    max-width: 600px;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller-inner {
+    display: flex;
+    width: max-content;
+    gap: 1em;
+    padding-block: 1em;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.errorHighlight {
+    border-color: red;
+}
+
+/* Keyframes / animations */
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    } 
+}
+
+@keyframes wordchange {
+    0%, 25% {
+        content: "< Computer Science Student />";
+    }
+    26%, 50% {
+        content: "< Web Developer />";
+    }
+    51%, 75% {
+        content: "< Programmer />";
+    }
+    76%, 100% {
+        content: "< Aspiring Software Engineer />";
+    }
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    } 
+    
+}

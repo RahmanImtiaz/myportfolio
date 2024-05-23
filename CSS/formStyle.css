@@ -1,0 +1,148 @@
+/* Form */
+
+.Form-box{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem; 
+    border: 0.125rem solid white;
+    border-radius: 1rem; 
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 0 0 40px 10px #ff00003c;
+    margin-bottom: 5rem;
+    margin: auto;
+}
+
+#Login-Form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem; 
+    height: 25rem; 
+}
+
+#signup-Form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem; 
+    height: 38rem; 
+}
+
+.Form-box form{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute; /*This means its relative to the parent (relative position)*/
+    transition: all .5s ease;
+}
+
+input, textarea{
+    width: 80%;
+    position: absolute;
+    color: white;
+    font-size: 1.25rem; 
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 2.5rem 0; /*Top/bottom - 2.5rem   right/left - 0*/
+    height: 1.4rem;
+}
+
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    min-width: 80%;
+    min-height: 12em;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input {
+    border-bottom: 0.125rem solid white;
+}
+
+.submit-btn{
+    width: 50%;
+    height: 1.875rem; 
+    cursor: pointer;
+    border-radius: 1.25rem;
+    margin: 1.25rem 0;
+    border: none;
+    font-size: 1rem;
+    background: rgb(36, 36, 36);
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 0.1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.submit-btn:hover {
+    letter-spacing: 0.3rem;
+    box-shadow: 0 0 20px 1px rgba(201, 89, 64, 0.198);
+}
+
+.submit-btn::before { /*This is the stuff before content*/
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to left, rgb(65, 65, 65), transparent);
+    transform: skewX(45deg) translateX(0);
+    z-index: -1;
+    transition: transform 0.5s;
+}
+
+.submit-btn:hover::before { 
+    transform: skewX(45deg) translateX(200%);
+    z-index: -1;
+}
+
+.Form-box::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height:200%;
+    background: conic-gradient(#DD2D4A 20deg, transparent 120deg);
+    z-index: -1;
+    transform-origin: center;
+    animation: rotate 6s linear infinite;
+}
+
+.Form-box::after{
+    content: '';
+    position: absolute;
+    width: 98%;
+    height:98%;
+    background: #191919;;
+    z-index: -1;
+    border-radius: 1rem; 
+}
+
+form h1 {
+    font-size: 2rem;
+}
+
+label {
+    color: white;
+    font-size: 1.25rem;
+    align-self: flex-start;
+    margin-left: 4rem;
+}

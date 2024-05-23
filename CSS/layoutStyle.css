@@ -1,0 +1,388 @@
+/* All */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* Background */
+header,
+header nav ul li ul {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #1919197f;
+    box-shadow: 0 0 20px 10px rgba(195, 134, 64, 0.113);
+    border: 0.125rem solid rgba(195, 134, 64, 0.208);
+}
+
+/* Header */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding: 2.5rem 3.75rem;
+    z-index: 1;
+    border-radius: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+}
+
+header nav {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: flex-end;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+header nav li {
+    position: relative;
+    display: inline-block;
+}
+
+header nav a, .footerLinks a {
+    text-decoration: none;
+    padding: 0.9375em;
+    padding-bottom: 0.3em;
+}
+
+header nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -0.3125rem;
+    left: 0;
+    background-color: white;
+    width: 0%;
+    height: 0.15625rem;
+    transition: .3s;
+}
+
+header nav a:hover {
+    color: white; /* prevents red highlighting*/
+}
+
+header nav a:hover::before {
+    width: 100%;
+}
+
+header nav ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    display: none;
+    border-radius: 1em;
+    text-align: center;
+}
+
+header nav ul li:hover ul.dropdown, header nav .dropdown li {
+    display: block;
+}
+
+#logo {
+    text-decoration: none;
+    justify-content: flex-start;
+    font-size: 3rem;
+    white-space: nowrap;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+}
+
+#logo:hover{
+    color: rgb(247, 41, 41);
+}
+
+
+/*Footer*/
+footer {
+    width: 100%;
+    padding: 1.25em;
+    text-align: center;
+    background-color: #1919197f;
+    box-shadow: 0 0 20px 10px rgba(195, 134, 64, 0.113);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: lightgray;
+}
+
+.socials a {
+    margin-right: 4em;
+}
+
+.socials a:last-child {
+    margin-right: 0;
+}
+
+.footerSection .footerLinks ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.footerLinks h3 {
+    font-size: 1.2rem;
+}
+
+.footerLinks ul {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.footerLinks li {
+    margin-bottom: 0.8em;
+}
+
+/* Body */
+body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Main Content styles */
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Images/backgroundDARK.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 20px 20px black;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#intro code {
+    color: rgb(247, 41, 41);
+    text-shadow: 2px 2px 4px #000000;
+    white-space: nowrap;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.9em;
+    line-height: 1.5;
+}
+
+#intro code::before {
+    content: "< Computer Science Student />";
+    animation: wordchange 10s infinite;
+}
+
+.section {
+    border-left: 0.25rem solid rgb(255, 0, 0);
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.section p, .section h2, .section h3, .section h4{
+    padding-left: 1em;
+}
+
+.section h4, .section p {
+   color: #898989;
+}
+
+.sectionNotification {
+    border-left: 0.25rem solid rgb(255, 0, 0);
+    width: 100vw;
+    margin-bottom: 1em;
+
+}
+
+#aboutme {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    font-size: 1.5em;
+    text-shadow: none;
+}
+
+/*sections*/
+.mainContentSection {
+    display: grid;
+    place-content: center;
+    min-height: 50vh;
+    margin: 0 auto;
+    color: black;
+    background-color: #191919;
+    box-shadow: 0 0 20px 10px rgba(195, 134, 64, 0.113);
+    border-radius: 1rem;
+    margin-bottom: 3em;
+}
+
+.mainContentSection h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+}
+
+.mainContentSection p,
+.mainContentSection h2 {
+    text-align: left;
+    font-family: "Kode Mono", monospace;
+    padding-left: 1em;
+    color: white;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2em;
+}
+
+.noneFoundMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-shadow: none;
+    margin-top: 5em;
+}
+
+/* Images */
+
+.iconImgs {
+    width: 3em;
+    height: 3em;
+}
+
+.iconImgs:hover {
+    transform: scale(1.1);
+}
+
+.loginiconImgs {
+    width: 1em;
+    height: 1em;
+
+}
+
+#profile-picture {
+    width: 15rem;
+    height: auto;
+}
+
+.loginMsg p{
+    color: red;
+    font-size: 1em;
+}
+
+.WelcomeMsg p{
+    color: white;
+    background-color: #191919;
+    box-shadow: 0 0 20px 10px rgba(195, 134, 64, 0.113);
+    border-radius: 1rem;
+    padding: 1em;
+}
+
+.WelcomeMsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+/* Grid Layout Styles */
+
+#mainContentContainer {
+    grid-area: maincontent;
+    margin-bottom: 3em;
+}
+
+#intro {
+    grid-area: intro;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.formMain {
+    padding-top: 10em;
+    padding-bottom: 5em;
+    grid-area: form;
+}
+
+#secondPageTitle{
+    grid-area: secondIntro;
+}
+
+#cardPage-title{ 
+    grid-area: blogTitle;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas:
+        "intro intro intro intro intro"
+        ". maincontent maincontent maincontent ."
+        "footer footer footer footer footer";
+}
+
+#loginBody, #blogBody {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-gap: 1em;
+    grid-template-areas:
+    ". . ."
+        ". form ."
+        ". form ."
+        ". form ."
+        "footer footer footer";
+}
+
+#gridContainerSecondPage{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas:
+        "secondIntro secondIntro secondIntro secondIntro secondIntro"
+        ". maincontent maincontent maincontent ."
+        "footer footer footer footer footer";
+}
+
+
+#cardPagegridContainer {
+    display: grid;
+    /*grid-template-columns: 1fr 3fr 1fr;*/
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-gap: 1em;
+    grid-template-areas:
+        "blogTitle blogTitle blogTitle blogTitle blogTitle"
+        ". maincontent maincontent maincontent ."
+        "footer footer footer footer footer";
+}
+
+

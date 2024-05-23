@@ -1,0 +1,9 @@
+/* Resetting all elements margin, padding, border and alignment alongside font size reset 
+/* All elements are used within the main html hence are reset */
+html, body, div, code, span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+   }
